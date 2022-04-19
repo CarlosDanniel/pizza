@@ -149,5 +149,21 @@ function updateCart() {
 		c('aside').style.left = '100vw';
 	}
 }
-
-
+c('.slide').classList.add('invert');
+function dark() {
+	if (document.querySelector('.slide').classList.contains('slide-right')) {
+		c('.pizza-area').classList.remove('color');
+		c('.slide').classList.remove('slide-right');
+		c('body').classList.remove('dark');
+		c('.dark-button').classList.remove('invert');
+		c('.slide').classList.remove('inv');
+		c('.slide').classList.add('invert');
+	}else{
+		c('.pizza-area').classList.add('color');
+		c('.slide').classList.add('slide-right');
+		c('body').classList.add('dark');
+		c('.dark-button').classList.add('invert');
+		c('.slide').classList.add('inv');
+		c('.slide').classList.remove('invert');
+	}
+}
